@@ -1,0 +1,81 @@
+/* - Yellow: hsl(47, 88%, 63%)
+
+- White: hsl(0, 0%, 100%)
+
+- Gray 500: hsl(0, 0%, 42%)
+- Gray 950: hsl(0, 0%, 7%)
+
+- Family: [Figtree](https://fonts.google.com/specimen/Figtree)
+- Weights: 500, 800 */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Figtree', sans-serif;
+}
+body{
+  display: flex;
+  justify-content: center;
+  background-color: hsl(47, 88%, 63%);
+}
+.container {
+  background-color: hsl(0, 0%, 100%);
+  width: 300px;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 70px 0;
+  border: 1px solid black;
+  box-shadow: 5px 5px 1px black;
+}
+.container-img{
+  width: 260px;
+  margin: 0 auto 20px;
+}
+.container-img img {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+  object-fit: cover;
+  object-position: center;
+  margin: auto;
+}
+.learning{
+  background-color: hsl(47, 88%, 63%);
+  padding: 5px;
+  width: 70px;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 15px;
+  font-weight: 700;
+}
+.date{
+  color: hsl(0, 0%, 7%);
+  font-size: 12px;
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+.container-msg h2{
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+.container-msg h2:hover{
+  color: hsl(47, 88%, 63%);
+}
+.info{
+  color: hsl(0, 0%, 42%);
+  font-size: 13px;
+  margin-bottom: 15px;
+}
+.profile{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.profile img{
+  width: 30px;
+}
+.profile p{
+  font-weight: 700;
+}
