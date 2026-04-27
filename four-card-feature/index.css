@@ -1,0 +1,103 @@
+:root{
+  --red: hsl(0, 78%, 62%);
+  --cyan: hsl(180, 62%, 55%);
+  --orange: hsl(34, 97%, 64%);
+  --blue: hsl(212, 86%, 64%);
+  --grey5: hsl(234, 12%, 34%);
+  --grey4: hsl(212, 6%, 44%);
+  --fraunces: 'Fraunces', serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  font-family: 'Poppins';
+  background-color: hsl(0, 0%, 98%);
+}
+main{
+  margin-top: 70px;
+  width: 90%;
+  max-width: 900px;
+  margin-bottom: 60px;
+}
+.reliable{
+  text-align: center;
+  font-size: 24px;
+  color: var(--grey4);
+  font-weight: 300;
+}
+.power{
+  text-align: center;
+  color: var(--grey5);
+  margin-bottom: 15px;
+}
+.mssg{
+  text-align: center;
+  width: 90%;
+  max-width: 400px;
+  margin: 0 auto 50px;
+  color: var(--grey4);
+  font-size: 12px;
+}
+.container{
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  align-items: center;
+  margin: auto;
+}
+
+.left, .top, .bottom, .right{
+  width: 270px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.152);
+  background-color: white;
+  border-radius: 4px;
+  height: 180px;
+  padding: 20px;
+  position: relative;
+}
+.left{
+  border-top: 5px solid var(--cyan);
+}
+.top{
+  border-top: 5px solid var(--red);
+  margin-bottom: 20px;
+}
+.bottom{
+  border-top: 5px solid var(--orange);
+}
+.right{
+  border-top: 5px solid var(--blue);
+}
+.title{
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: var(--grey5);
+}
+.info{
+  font-size: 11px;
+  color: var(--grey4);
+  margin-bottom: 15px;
+}
+.picture{
+  width: 40px;
+  position: absolute;
+  right: 20px;
+  bottom: 20px;
+}
+
+@media (max-width: 790px) {
+  .power, .reliable{
+    font-size: 20px;
+  }
+  .container{
+    flex-direction: column;
+  }
+  .left, .top, .bottom, .right{
+    width: 300px;
+  }
+}
