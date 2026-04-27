@@ -1,0 +1,124 @@
+:root{
+  --primary-color: hsl(212, 21%, 14%);
+  --secondary-color: hsl(0, 0%, 100%);
+  --text-color: hsl(228, 12%, 48%);
+  --background-color: hsl(30, 38%, 92%);
+  --green-light: hsl(158, 36%, 37%);
+  --green-deep: hsl(158, 42%, 18%);
+  --fraunces: 'Fraunces', serif;
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  font-family: Montserrat;
+  background-color: var(--background-color);
+}
+.container{
+  width: 95%;
+  max-width: 600px;
+  height: 400px;
+  margin: 80px auto 40px;
+  border-radius: 15px;
+  background-color: var(--secondary-color);
+  display: flex;
+}
+.img-container{
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 15px 0 0 15px;
+}
+.img-container img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.content{
+  width: 50%;
+  padding: 30px;
+}
+.title{
+  color: var(--text-color);
+  font-weight: 500;
+  letter-spacing: 5px;
+  margin-bottom: 20px;
+}
+.content h1{
+  color: var(--primary-color);
+  font-family: var(--fraunces);
+  margin-bottom: 20px;
+  font-size: 32px;
+  line-height: 30px;
+}
+.info{
+  color: var(--text-color);
+  margin-bottom: 20px;
+  font-weight: 500;
+  line-height: 20px;
+  word-spacing: 2px;
+}
+.price-container{
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.price{
+  color: var(--green-light);
+  font-family: var(--fraunces);
+  font-size: 29px;
+  font-weight: 700;
+}
+.price-old{
+  color: var(--text-color);
+  font-size: 12px;
+  text-decoration: line-through;
+  font-weight: 500;
+}
+.container button{
+  background-color: var(--green-light);
+  color: var(--secondary-color);
+  border: none;
+  padding: 10px;
+  width: 100%;
+  border-radius: 7px;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.container button:hover{
+  background-color: var(--green-deep);
+}
+
+@media (max-width: 375px) {
+  .container{
+    flex-direction: column;
+    height: auto;
+    margin-top: 20px;
+  }
+  .img-container{
+    width: 100%;
+    height: 280px;
+    border-radius: 15px 15px 0 0;
+  }
+  .img-container img{
+    width: 100%;
+    height: 140%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .content{
+    width: 100%;
+    padding: 20px;
+  }
+  .content h1{
+    font-size: 28px;
+  }
+}
