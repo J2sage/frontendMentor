@@ -1,0 +1,123 @@
+:root{
+  --Purple-light: hsl(260, 100%, 95%);
+  --Purple: hsl(264, 82%, 80%);
+  --Purple-dark: hsl(263, 55%, 52%);
+  --White: hsl(0, 0%, 100%);
+  --Grey-100: hsl(214, 17%, 92%);
+  --Grey-200: hsl(0, 0%, 81%);
+  --Grey-400: hsl(224, 10%, 45%);
+  --Grey-500: hsl(217, 19%, 35%);
+  --Dark-blue: hsl(219, 29%, 14%);
+  --Black: hsl(0, 0%, 7%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  display: flex;
+  justify-content: center;
+  font-family: 'Barlow Semi Condensed', sans-serif;
+  background-color: var(--Purple-light);
+}
+main{
+  margin-top: 70px;
+  width: 90%;
+  max-width: 1000px;
+  margin-bottom: 60px;
+  display: grid;
+  grid-template-areas: 
+  'item1 item1 item2 item3'
+  'item4 item5 item5 item3';
+  ;
+  gap: 15px;
+}
+section{
+  border-radius: 7px;
+  padding: 30px 20px;
+  box-shadow: 8px 8px 10px rgba(0, 0, 0, 0.152);
+  display: flex;
+  flex-direction: column;
+}
+.testimonial1{
+  grid-area: item1;
+  background-color: var(--Purple-dark);
+  color: var(--White);
+}
+.profile{
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 15px;
+}
+.profile img{
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid var(--White);
+}
+.details p{
+  font-size: 10px;
+}
+.testimonial3 .profile img,
+.testimonial4 .profile img
+{
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid var(--Grey-500);
+}
+.mssg{
+  font-weight: 600;
+  margin-bottom: 10px;
+  font-size: 14px;
+  line-height: 1.5rem;
+}
+.mssg2{
+  font-size: 11px;
+  color: var(--Grey-100);
+  line-height: 1.3rem;
+}
+.testimonial3 .mssg2,
+.testimonial4 .mssg2
+{
+  color: var(--Grey-400);
+}
+.testimonial2{
+  grid-area: item2;
+  background-color: var(--Grey-500);
+  color: var(--White);
+}
+.testimonial3{
+  grid-area: item3;
+  background-color: var(--White);
+  color: var(--Grey-500);
+}
+.testimonial4{
+  grid-area: item4;
+  background-color: var(--White);
+  color: var(--Grey-500);
+}
+.testimonial5{
+  grid-area: item5;
+  background-color: var(--Dark-blue);
+  color: var(--White); 
+}
+@media (max-width: 768px) {
+  main{
+    display: flex;
+    flex-direction: column;
+  }
+  section{
+    width: 90%;
+    max-width: 270px;
+    margin: auto;
+  }
+  .profile{
+    gap: 10px;
+  }
+  .mssg{
+    margin-bottom: 20px;
+  }
+}
