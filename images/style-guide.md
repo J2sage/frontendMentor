@@ -13,29 +13,25 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Purple 50: hsl(260, 100%, 95%)
-- Purple 300: hsl(264, 82%, 80%)
-- Purple 500: hsl(263, 55%, 52%)
+- Soft orange: hsl(35, 77%, 62%)
+- Soft red: hsl(5, 85%, 63%)
 
 ### Neutral
 
-- White: hsl(0, 0%, 100%)
-- Grey 100: hsl(214, 17%, 92%)
-- Grey 200: hsl(0, 0%, 81%)
-- Grey 400: hsl(224, 10%, 45%)
-- Grey 500: hsl(217, 19%, 35%)
-- Dark blue: hsl(219, 29%, 14%)
-- Black: hsl(0, 0%, 7%)
+Off-white: hsl(36, 100%, 99%)
+Grayish blue: hsl(233, 8%, 79%)
+Dark grayish blue: hsl(236, 13%, 42%)
+Very dark blue: hsl(240, 100%, 5%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size: 13px
+- Font size (paragraph): 15px
 
 ### Font
 
-- Family: [Barlow Semi Condensed](https://fonts.google.com/specimen/Barlow+Semi+Condensed)
-- Weights: 500, 600
+- Family: [Inter](https://fonts.google.com/specimen/Inter)
+- Weights: 400, 700, 800
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
