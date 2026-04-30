@@ -1,0 +1,149 @@
+:root{
+  --Pink: hsl(0, 36%, 70%);
+  --Red: hsl(0, 93%, 68%);
+  --Gray: hsl(0, 6%, 24%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Josefin Sans';
+  background: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+}
+main{
+  display: flex;
+  position: relative;
+}
+.left{
+  padding: 50px 6rem;
+}
+.logo img{
+  width: 120px;
+}
+.hero-mobile{
+  margin-top: 35px;
+  display: none;
+  width: 100%;
+}
+.hero-mobile img{
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+.info{
+  margin-top: 100px;
+}
+.return{
+  font-size: 5rem;
+  letter-spacing: 10px;
+}
+.return span{
+  color: var(--Pink);
+}
+.mssg{
+  width: 50%;
+  color: var(--Pink);
+  margin-top: 30px;
+  font-size: 15px;
+  line-height: 30px;
+}
+.input-container{
+  margin-top: 30px;
+  width: 35%;
+  min-width: 280px;
+  position: relative;
+}
+.input-container input{
+  background: transparent;
+  padding: 10px 20px;
+  width: 100%;
+  outline: none;
+  color: var(--Gray);
+  font-size: 14px;
+  font-family: inherit;
+  border-radius: 15px;
+  border: 1px solid var(--Gray);
+}
+.input-container input.warning{
+  border-color: var(--Red);
+}
+.error-img{
+  display: none;
+  position: absolute;
+  right: 70px;
+  top: 8px;
+  width: 20px;
+}
+.input-container button{
+  position: absolute;
+  top: 0;
+  right: -20px;
+  /* bottom: 0; */
+  padding: 8px 35px;
+  border-radius: 20px;
+  background: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+  border: none;
+  outline: none;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+}
+.error{
+  color: var(--Red);
+  margin-top: 10px;
+  margin-left: 20px;
+  display: none;
+}
+.hero{
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  /* max-height: 100vh; */
+  /* width: 50%; */
+  overflow: hidden;
+}
+.hero-image{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+@media (min-width: 571px) and (max-width: 800px) {
+  .left{
+    padding: 50px 2.5rem;
+  }
+  .mssg{
+    width: 40%;
+    min-width: 300px;
+  }
+  .hero{
+    height: 100%;
+    /* max-height: 100vh; */
+    width: 40%;
+    overflow: hidden;
+  }
+}
+@media (min-width: 0px) and (max-width: 570px) {
+  /* .left{
+    padding: 50px 2rem;
+  } */
+  .return{
+    text-align: center;
+    margin-top: 10px;
+  }
+  .mssg{
+    width: 100%;
+  }
+  .input-container{
+    width: 80%;
+  }
+  .hero-mobile{
+    display: block;
+  }
+  .hero{
+    display: none;
+  }
+}
