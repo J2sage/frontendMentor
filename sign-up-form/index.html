@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+  <main>
+    <section class="left">
+      <h1>Learn to code by watching others </h1>
+      <p>see how experienced developers solve problem in real-time.</p>
+      <p>Watching scripted tutorial is great, but understanding how developer think is invaluable.</p>
+    </section>
+    <section class="right">
+      <p><span class="free">Try it free 7 days</span> then $20/mo. thereafter</p>
+      <form  class="container">
+        <div>
+          <input type="text" id="first" placeholder="First Name">
+          <p class="error" id="name-error">First Name can't be empty</p>
+          <img src="../images/icon-error.svg" class="error-icon" id="name-error-icon" alt="error-icon">
+        </div>
+        <div>
+          <input type="text" id="last" placeholder="Last Name">
+          <p class="error" id="last-error">Last Name can't be empty</p>
+          <img src="../images/icon-error.svg" class="error-icon" id="last-error-icon" alt="error-icon">
+        </div>
+        <div>
+          <input type="email" id="email" placeholder="Email Address">
+          <p class="error" id="email-error">Looks like this isn't an email</p>
+          <img src="../images/icon-error.svg" class="error-icon" id="email-error-icon" alt="error-icon">
+        </div>
+        <div>
+          <input type="password" id="password" placeholder="Password">
+          <p class="error" id="password-error">Password can't be empty</p>
+          <img src="../images/icon-error.svg" class="error-icon" id="password-error-icon" alt="error-icon">
+        </div>
+
+        <button id="btn">CLAIM YOUR FREE TRIAL</button>
+
+        <P class="term">By clicking this button you are agreeing to all our <span>Terms and Services</span></P>
+      </form>
+    </section>
+  </main>
+  
+  <script src="index.js"></script>
+
+</body>
+</html>

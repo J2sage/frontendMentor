@@ -13,17 +13,17 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Pink 400: hsl(0, 36%, 70%)
-- Red 500: hsl(0, 93%, 68%)
+- Red 400: hsl(0, 100%, 74%) 
+- Green 400: hsl(154, 59%, 51%)
+
+### Accent
+
+- Purple 700: hsl(248, 32%, 49%)
 
 ### Neutral
 
-- Gray 900: hsl(0, 6%, 24%)
-
-### Gradients
-
-- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
-- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+- Gray 900: hsl(249, 10%, 26%) 
+- Purple 350: hsl(246, 25%, 77%)
 
 ## Typography
 
@@ -33,7 +33,7 @@ The designs were created to the following widths:
 
 ### Font
 
-- Family: [Josefin Sans](https://fonts.google.com/specimen/Josefin+Sans)
-- Weights: 300, 400, 600
+- Family: [Poppins](https://fonts.google.com/specimen/Poppins)
+- Weights: 400, 500, 600, 700
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
