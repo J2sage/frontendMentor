@@ -1,0 +1,228 @@
+:root{
+  --Green: hsl(163, 72%, 41%);
+  --Red: hsl(356, 69%, 56%);
+  --Blue-Facebook: hsl(208, 92%, 53%);
+  --Blue-Twitter: hsl(203, 89%, 53%);
+  --Red-YouTube: hsl(348, 97%, 39%);
+  --Instagram:   hsl(5, 77%, 71%);
+
+  --White-bg: hsl(0, 100%, 100%);
+  --Blue-Top-bg: hsl(225, 100%, 98%);
+  --Navy-Card-bg: hsl(227, 47%, 96%);
+  --Gray-650-Text: hsl(228, 12%, 44%);
+  --Gray-950-Text: hsl(230, 17%, 14%);
+
+  --Gray-Toggle: hsl(230, 22%, 74%);
+}
+
+.darkmode{
+  --White-bg: hsl(230, 17%, 14%);
+  --Blue-Top-bg: hsl(232, 19%, 15%);
+  --Navy-Card-bg: hsl(228, 28%, 20%);
+  --Gray-650-Text: hsl(230, 22%, 74%);
+  --Gray-950-Text: hsl(0, 100%, 100%);
+
+  --Gray-Toggle: hsl(146, 68%, 55%);
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: 'Inter', sans-serif;
+  background-color: var(--White-bg);
+}
+header{
+  background-color: var(--Blue-Top-bg);
+  height: 140px;
+  
+}
+.dashboard{
+  display: flex;
+  justify-content: right;
+  padding: 15px 5%;
+  max-width: 1440px;
+  margin: auto;
+}
+.left{
+  margin-right: auto;
+}
+.left > h1{
+  color: var(--Gray-950-Text);
+}
+.left > p{
+  color: var(--Gray-650-Text);
+  font-weight: 700;
+  font-size: 11px;
+}
+.right{
+  display: flex;
+  align-items: center;
+  flex-wrap: nowrap;
+  gap: 10px;
+
+}
+.right button{
+  background: transparent;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+.right > p{
+  color: var(--Gray-Toggle);
+  font-weight: 700;
+  font-size: 13px;
+}
+#light #off{
+  fill: var(--Gray-Toggle);
+}
+#off{
+  fill: var(--Gray-Toggle);
+  display: none;
+}
+.darkmode #off{
+  display: block;
+}
+.darkmode #on{
+  display: none;
+}
+main{
+  max-width: 1440px;
+  width: 90%;
+  margin: auto;
+  margin-top: -50px;
+  /* padding: 0 5%; */
+}
+.hero, .mini{
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 15px;
+  row-gap: 15px;
+  justify-content: center;
+}
+.box{
+  background-color: var(--Navy-Card-bg);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0;
+  border-radius: 10px;
+  max-width: 270px;
+  min-width: 190px;
+}
+.handle-name{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-weight: 700;
+  color: var(--Gray-650-Text);
+  margin-bottom: 20px;
+}
+.number{
+  font-size: 3.5rem;
+  font-weight: 700;
+  color: var(--Gray-950-Text);
+  margin-bottom: 5px;
+}
+.follower{
+  letter-spacing: 5px;
+  color: var(--Gray-650-Text);
+  font-size: 11px;
+  margin-bottom: 15px;
+}
+.addition{
+  font-weight: 700;
+  color: var(--Green);
+  font-size: 10px;
+}
+.youtube .addition{
+  color: var(--Red);
+}
+.facebook{
+  border-top: 5px solid var(--Blue-Facebook);
+}
+.twitter{
+  border-top: 5px solid var(--Blue-Twitter);
+}
+.instagram{
+  border-top: 5px solid var(--Instagram);
+}
+.youtube{
+  border-top: 5px solid var(--Red-YouTube);
+}
+
+.overview{
+  margin-top: 30px;
+  margin: 30px auto 30px;
+}
+.overview > h1{
+  color: var(--Gray-650-Text);
+  margin-bottom: 20px;
+}
+.container{
+  background-color: var(--Navy-Card-bg);
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  max-width: 270px;
+  min-width: 190px;
+}
+.top, .bottom{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.top{
+  margin-bottom: 20px;
+}
+.top p{
+  color: var(--Gray-650-Text);
+  font-weight: 700;
+}
+.bottom p{
+  color: var(--Green);
+  font-weight: 700;
+  font-size: 10px;
+}
+.bottom h2{
+  color: var(--Gray-950-Text);
+  font-weight: 700;
+  font-size: 2rem;
+}
+.top p, .bottom h2{
+  margin-right: auto;
+  align-items: center;
+}
+
+@media (max-width: 830px) {
+  .hero, .mini{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .container, .box{
+    margin: auto;
+    width: 250px;
+  }
+}
+@media (max-width: 550px) {
+  .dashboard{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto 20px;
+  }
+  .right{
+    justify-content: space-between;
+  }
+  main{
+    margin-top: -20px;
+  }
+  .hero, .mini{
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .container, .box{
+    margin: auto;
+    width: 270px;
+  }
+}
