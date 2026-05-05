@@ -16,7 +16,7 @@
     </section>
     <section class="right">
       <p><span class="free">Try it free 7 days</span> then $20/mo. thereafter</p>
-      <form  class="container">
+      <form id="container"  class="container">
         <div>
           <input type="text" id="first" placeholder="First Name">
           <p class="error" id="name-error">First Name can't be empty</p>
@@ -38,7 +38,7 @@
           <img src="../images/icon-error.svg" class="error-icon" id="password-error-icon" alt="error-icon">
         </div>
 
-        <button id="btn">CLAIM YOUR FREE TRIAL</button>
+        <button form="container" type="submit" id="btn">CLAIM YOUR FREE TRIAL</button>
 
         <P class="term">By clicking this button you are agreeing to all our <span>Terms and Services</span></P>
       </form>

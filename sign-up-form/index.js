@@ -11,7 +11,7 @@ const emailErrorIcon = document.getElementById('email-error-icon');
 const password = document.getElementById('password');
 const passwordError = document.getElementById('password-error');
 const passwordErrorIcon = document.getElementById('password-error-icon');
-const formElement = document.getElementsByClassName('container')[0];
+// const formElement = document.getElementsByClassName('container')[0];
 // const errorElement = document.getElementsByClassName('error')[0];
 
 bttn.addEventListener('click', (event)=>{
