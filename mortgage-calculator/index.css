@@ -1,0 +1,215 @@
+:root{
+  --Lime: hsl(61, 70%, 52%);
+  --Red: hsl(4, 69%, 50%);
+
+  --White: hsl(0, 0%, 100%);
+  --blue100: hsl(202, 86%, 94%);
+  --blue300: hsl(203, 41%, 72%);
+  --blue500: hsl(200, 26%, 54%);
+  --blue700: hsl(200, 24%, 40%);
+  --blue900: hsl(202, 55%, 16%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--blue100);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  /* display: flex;
+  justify-content: center; */
+}
+main{
+  width: 80%;
+  max-width: 800px;
+  margin: 100px auto 20px;
+  background-color: var(--White);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+}
+.left{
+  flex: 1;
+  padding: 25px;
+  max-width: 400px;
+  margin: auto;
+}
+.left > nav{
+  display: flex;
+  align-items: baseline;
+  justify-content: flex-end;
+  margin-bottom: 20px;
+}
+.left > nav > h2{
+  margin-right: auto;
+  color: var(--blue900);
+}
+.left > nav > p{
+  text-decoration: underline;
+  font-size: 10px;
+  color: var(--blue500);
+  font-weight: 700;
+}
+.calculation-container > label,
+.term-rate label,
+.payment-type label{
+  color: var(--blue500);
+  font-weight: 600;
+  /* font-size: 11px; */
+}
+.amount-input, .amount-term, .interest-rate{
+  margin: 5px auto 2px;
+  display: flex;
+  border: 1px solid var(--blue500);
+  border-radius: 4px;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.mssg{
+  color: var(--Red);
+  font-size: 10px;
+  font-weight: 700;
+}
+.amount-error, .term-error, .rate-error, .type-error{
+  display: none;
+}
+.amount-input:active, .amount-term:hover, .interest-rate:hover{
+  border: 1px solid var(--Lime);
+}
+.amount-input.error, .amount-term.error, .interest-rate.error{
+  border: 1px solid var(--Red);
+}
+.amount-input  span,
+.amount-term span,
+.interest-rate span{
+  background-color: var(--blue300);
+  padding: 7px 10px;
+  color: var(--blue900);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.amount-input:active  span,
+.amount-term:hover span,
+.interest-rate:hover span{
+  background-color: var(--Lime);
+}
+.amount-input.error  span,
+.amount-term.error span,
+.interest-rate.error span{
+  background-color: var(--Red);
+  color: var(--White);
+}
+.amount-input  input{
+  padding: 5px 8px;
+  font-size: 13px;
+  width: 100%;
+  border: none;
+  outline: none;
+  /* max-width: 250px; */
+}
+.term-rate{
+  display: flex;
+  gap: 10px;
+  margin-top: 15px;
+}
+.amount-term  input, .interest-rate input{
+  padding: 5px;
+  font-size: 13px;
+  width: 100%;
+  border: none;
+  outline: none;
+}
+.payment-type{
+  margin: 15px auto 15px;
+}
+.repayment, .interest{
+  margin-top: 5px;
+  border: 1px solid var(--blue900);
+  padding: 5px 10px;
+  border-radius: 3px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  /* font-size: 11px; */
+  color: var(--blue900);
+  font-weight: 700;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.repayment:hover, .interest:hover{
+  border: 1px solid var(--Lime);
+  background-color: hsla(61, 70%, 52%, 0.323);
+}
+.interest{
+  margin-bottom: 2px;
+}
+.submit{
+  display: block;
+  width: 60%;
+  background-color: var(--Lime);
+  color: var(--blue900);
+  padding: 8px 15px;
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: inherit;
+  gap: 10px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  transition: all .5s ease-in-out;
+}
+.submit:hover{
+  opacity: 0.9;
+  transform: translateY(5px);
+}
+.submit img{
+  width: 15px;
+}
+.submit p{
+  font-weight: 700;
+  font-size: 13px;
+}
+
+.right{
+  flex: 1;
+  /* margin: auto; */
+  background-color: var(--blue900);
+  border-radius: 0 20px 20px 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: var(--blue100);
+  padding: 20px;
+}
+.illustration{
+  width: 150px;
+}
+.right h4{
+  margin: 15px auto 15px;
+}
+.right p{
+  font-size: 11px;
+  width: 80%;
+}
+
+@media (max-width: 768px) {
+  main{
+    flex-direction: column;
+    width: 95%;
+    margin: 20% auto 20px;
+  }
+  .submit{
+    margin: auto;
+    width: 100%;
+    max-width: 250px;
+  }
+  .right{
+    border-radius: 0 0 20px 20px;
+  }
+}
