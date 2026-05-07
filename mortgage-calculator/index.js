@@ -1,4 +1,5 @@
 const btn = document.getElementsByClassName('submit')[0];
+const clearBtn = document.getElementById('clear-btn');
 const amountElement = document.getElementById('amount');
 const yearsElement = document.getElementById('years');
 const percentageElement = document.getElementById('percentage');
@@ -17,6 +18,15 @@ const resultElement = document.getElementsByClassName('result')[0];
 
 let monthlyElement = document.getElementById('monthly');
 let totalElement = document.getElementById('total');
+
+clearBtn.addEventListener('click', ()=>{
+  amountElement.value = '';
+  yearsElement.value = '';
+  percentageElement.value = '';
+
+  emptyElement.style.display = 'flex';
+  resultElement.style.display = 'none';
+})
 
 btn.addEventListener('click', (event)=>{
   event.preventDefault();
