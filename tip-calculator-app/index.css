@@ -1,0 +1,239 @@
+:root{
+  --Green400: hsl(172, 67%, 45%);
+  --Green900: hsl(183, 100%, 15%);
+  --Grey500: hsl(186, 14%, 43%);
+  --Grey400: hsl(184, 14%, 56%);
+  --Grey200: hsl(185, 41%, 84%);
+  --Grey50: hsl(189, 47%, 97%);
+  --White: hsl(0, 100%, 100%);
+  --Red: hsl(4, 69%, 50%);
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  background-color: var(--Grey200);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Space Mono', monospace;
+}
+.logo{
+  margin-top: 5rem;
+  width: 50px;
+}
+main{
+  margin-top: 3.5rem;
+  background-color: var(--White);
+  width: 100%;
+  max-width: 1100px;
+  padding: 25px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: right;
+  gap: 20px;
+}
+.input-part{
+  width: 50%;
+  max-width: 500px;
+  margin-right: auto;
+}
+.bill{
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: var(--Green900);
+}
+.input-box{
+  position: relative;
+  margin-bottom: 25px;
+}
+.input-box img{
+  position: absolute;
+  width: 9px;
+  top: 8px;
+  left: 10px;
+}
+.input-box > input{
+  width: 100%;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: right;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  background-color: var(--Grey50);
+  color: var(--Green900);
+  font-weight: 700;
+}
+.input-box > input:focus{
+  border: 2px solid var(--Green900);
+}
+.input-box > input::placeholder{
+  color: var(--Grey400);
+}
+.tip-choice{
+  margin-bottom: 25px;
+}
+.selection{
+  font-size: 14px;
+  margin-bottom: 10px;
+  color: var(--Green900);
+}
+.tip-grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 15px;
+  row-gap: 10px;
+}
+#percentage.active{
+  background-color: var(--Green400);
+  color: var(--Green900);
+}
+.five, .ten, .fifteen, .two-five, .fifty{
+  background-color: var(--Green900);
+  color: var(--White);
+  text-align: center;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 5px;
+  padding: 5px;
+  cursor: pointer;
+  transition: all .3s ease-in-out;
+}
+.five:hover, .ten:hover, .fifteen:hover,
+.two-five:hover, .fifty:hover{
+  background-color: var(--Grey200);
+  color: var(--Green900);
+}
+.custom{
+  background-color: var(--Grey50);
+  color: var(--Green900);
+  border: none;
+  outline: none;
+  cursor: pointer;
+  text-align: right;
+  padding: 5px 10px;
+  font-weight: 700;
+  font-size: 14px;
+  border-radius: 5px;
+  width: 100%;
+}
+.custom:focus{
+  border: 2px solid var(--Green900);
+}
+.custom::placeholder{
+  color: var(--Green900);
+  text-align: center;
+}
+.people-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+.no{
+  color: var(--Green900);
+  font-size: 14px;
+}
+.error{
+  color: var(--Red);
+  font-size: 11px;
+  display: none;
+}
+.people-input{
+  position: relative;
+}
+.people-input img{
+  position: absolute;
+  width: 9px;
+  top: 10px;
+  left: 10px;
+}
+.people-input > input{
+  width: 100%;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  text-align: right;
+  font-size: 15px;
+  outline: none;
+  border: none;
+  background-color: var(--Grey50);
+  color: var(--Green900);
+  font-weight: 700;
+}
+.people-input > input:focus{
+  border: 2px solid var(--Green900);
+}
+.people-input > input::placeholder{
+  color: var(--Grey400);
+}
+
+.result-part{
+  width: 50%;
+  max-width: 500px; 
+  background-color: var(--Green900);
+  border-radius: 10px;
+  padding: 25px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.bottom button{
+  display: block;
+  width: 100%;
+  border: none;
+  outline: none;
+  background-color: var(--Green400);
+  color: var(--Green900);
+  padding: 5px;
+  font-size: 14px;
+  font-family: inherit;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 5px;
+  margin-top: 15px;
+}
+.amount-container{
+  display: flex;
+  justify-content: right;
+  align-items: center;
+}
+.amount-container:first-of-type{
+  margin-bottom: 10px;
+}
+.left{
+  margin-right: auto;
+}
+.amount{
+  color: var(--White);
+  font-size: 1rem;
+  margin-bottom: 5px;
+}
+.person{
+  color: var(--Grey400);
+}
+.right{
+  color: var(--Green400);
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+.right span{
+  font-size: 2rem;
+}
+.right h1{
+  font-size: 3rem;
+}
+@media (max-width:500px) {
+  main{
+    flex-direction: column;
+    align-items: center;
+  }
+  .input-part, .result-part{
+    width: 100%;
+    margin: auto;
+  }
+}
