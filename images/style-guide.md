@@ -13,26 +13,26 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Green 400: hsl(172, 67%, 45%)
+- Blue 950: hsl(233, 26%, 24%)
+- Green 500: hsl(136, 64%, 51%)
+- Cyan 400: hsl(192, 69%, 51%)
 
 ### Neutral
 
-- Green 900: hsl(183, 100%, 15%)
-- Grey 500: hsl(186, 14%, 43%)
-- Grey 400: hsl(184, 14%, 56%)
-- Grey 200: hsl(185, 41%, 84%)
-- Grey 50: hsl(189, 47%, 97%)
+- Gray 600: hsl(233, 8%, 62%)
+- Gray 100: hsl(220, 16%, 96%)
+- Gray 50: hsl(0, 0%, 98%)
 - White: hsl(0, 100%, 100%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size (form inputs): 24px
+- Font size: 18px
 
 ### Font
 
-- Family: [Space Mono](https://fonts.google.com/specimen/Space+Mono)
-- Weights: 700
+- Family: [Public Sans](https://fonts.google.com/specimen/Public+Sans)
+- Weights: 300, 400, 700
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
