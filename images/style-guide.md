@@ -13,26 +13,37 @@ The designs were created to the following widths:
 
 ### Primary
 
-- Blue 950: hsl(233, 26%, 24%)
-- Green 500: hsl(136, 64%, 51%)
-- Cyan 400: hsl(192, 69%, 51%)
+- Blue 950: hsl(256, 26%, 20%)
+- Blue 500: hsl(216, 30%, 68%)
 
 ### Neutral
 
-- Gray 600: hsl(233, 8%, 62%)
-- Gray 100: hsl(220, 16%, 96%)
+- Gray 950: hsl(270, 9%, 17%)
+- Gray 700: hsl(273, 4%, 51%)
 - Gray 50: hsl(0, 0%, 98%)
-- White: hsl(0, 100%, 100%)
 
 ## Typography
 
 ### Body Copy
 
-- Font size: 18px
+- Font size: 16px
 
-### Font
+### Headings
 
-- Family: [Public Sans](https://fonts.google.com/specimen/Public+Sans)
-- Weights: 300, 400, 700
+- Family: [DM Serif Display](https://fonts.google.com/specimen/DM+Serif+Display)
+- Weights: 400
+
+### Body
+
+- Family: [Karla](https://fonts.google.com/specimen/Karla)
+- Weights: 400, 700
+
+## Icons
+
+You can use either use the social icons provided or load in a font icon library. Some library suggestions can be found below:
+
+- [Font Awesome](https://fontawesome.com)
+- [IcoMoon](https://icomoon.io)
+- [Ionicons](https://ionicons.com)
 
 > 💎 [Upgrade to Pro](https://www.frontendmentor.io/pro?ref=style-guide) for design file access to see all design details and get hands-on experience using a professional workflow with tools like Figma.
