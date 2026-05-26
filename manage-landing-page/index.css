@@ -421,14 +421,9 @@ main{
     animation: none;
   }
   .testimonial{
-    background-color: var(--Gray50);
     flex: 0 0 100%;
     width: 100%;
     max-width: 100vw;
-    position: relative;
-    overflow: visible;
-    padding: 50px 30px 20px;
-    text-align: center;
   }
   .box{
     flex-direction: column;
