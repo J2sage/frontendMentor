@@ -1,0 +1,270 @@
+:root{
+  --Orange400: hsl(12, 88%, 59%);
+  --Blue950: hsl(228, 39%, 23%);
+
+  --Gray950: hsl(233, 12%, 13%);
+  --Orange50: hsl(13, 100%, 96%);
+  --Gray50: hsl(0, 0%, 98%);
+
+  --BVP: 'Be Vietnam Pro';
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body{
+  font-family: var(--BVP), sans-serif;
+}
+header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 7%;
+}
+.logo-container > img{
+  width: 130px;
+}
+.tab-links{
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+}
+.tab-links li{
+  list-style: none;
+  cursor: pointer;
+}
+.tab-links a{
+  text-decoration: none;
+  color: var(--Gray950);
+  transition: color .5s ease-in-out;
+}
+.tab-links a:hover{
+  opacity: 0.4;
+}
+.start-btn{
+  background-color: var(--Orange400);
+  padding: 10px 20px;
+  border-radius: 20px;
+  display: inline-block;
+}
+.start-btn:hover{
+  opacity: 0.8;
+}
+.start-btn a{
+  text-decoration: none;
+  color: white;
+  transition: background-color .5s ease-in-out;
+}
+.sidebar-control{
+  display: none;
+}
+main{
+  /* padding: 0 7%; */
+  position: relative;
+}
+/* .desktop-bg{
+  position: absolute;
+  top: -150px;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 150%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+} */
+.intro-container{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 50px;
+  padding: 0 7%;
+}
+.intro{
+  width: 50%;
+  max-width: 500px;
+}
+.intro h1{
+  font-size: 4.5rem;
+  margin-bottom: 20px;
+  color: var(--Blue950);
+}
+.intro-mssg{
+  color: var(--Gray950);
+  opacity: 0.8;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+  width: 70%;
+}
+.statistics{
+  width: 50%;
+  max-width: 500px;
+}
+.statistics img{
+  width: 90%;
+}
+.features-container{
+  padding: 9rem 7% 5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: top;
+}
+.question{
+  width: 50%;
+  max-width: 500px;
+}
+.question h1{
+  font-size: 3rem;
+  margin-bottom: 20px;
+  color: var(--Blue950);
+  line-height: 1;
+}
+.question p{
+  color: var(--Gray950);
+  opacity: 0.8;
+  /* font-size: 1.2rem; */
+  margin-bottom: 30px;
+  width: 70%;
+}
+.features{
+  width: 50%;
+  max-width: 500px;
+}
+.feature{
+  display: flex;
+  align-items: top;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+.number{
+  background-color: var(--Orange400);
+  color: white;
+  font-weight: bold;
+  width: 90px;
+  height: 20px;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.text h2{
+  font-size: 1.5rem;
+  color: var(--Blue950);
+  margin-bottom: 10px;
+}
+.text p{
+  color: var(--Gray950);
+  opacity: 0.8;
+  /* font-size: 1.2rem; */
+}
+.testimonial-container{
+  padding: 0 0 5rem;
+}
+.testimonial-container h1{
+  font-size: 2.5rem;
+  margin-bottom: 30px;
+  color: var(--Blue950);
+  text-align: center;
+  
+}
+.testimonial-animation{
+  padding: 30px 0 0;
+  display: flex;
+  overflow-x: auto;
+  width: 100%;
+}
+.testimonial-animation::-webkit-scrollbar{
+  display: none;
+}
+.testimonial-animation-container{
+  display: flex;
+  gap: 2rem;
+  animation: slide 20s alternate infinite;
+}
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-30%);
+  }
+}
+.testimonial{
+  background-color: var(--Gray50);
+  flex: 0 0 500px;
+  position: relative;
+  overflow: visible;
+  padding: 50px 30px 20px;
+  text-align: center;
+}
+.testimonial-img{
+  width: 60px;
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+.testimonial-img img{
+  width: 100%;
+  border-radius: 50%;
+  z-index: 1;
+}
+.name{
+  font-weight: bold;
+  color: var(--Blue950);
+  margin-top: 5px;
+}
+.testimonial p{
+  color: var(--Gray950);
+  opacity: 0.8;
+  /* font-size: 1.2rem; */
+  margin-top: 10px;
+}
+.testimonial-container .start-btn{
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+  width: 120px;
+  text-align: center;
+  transition: all .5s ease-in-out;
+}
+.testimonial-container .start-btn:hover{
+  box-shadow: 1px 1px 5px var(--Orange400);
+}
+.box{
+  background-color: var(--Orange400);
+  padding: 3rem 7%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.box h2{
+  font-size: 3rem;
+  font-weight: 400;
+  color: white;
+  width: 50%;
+  max-width: 500px;
+  line-height: 1;
+}
+.box .start-btn{
+  background-color: white;
+  border: 1px solid white;
+  padding: 10px 20px;
+  transition: all .5s ease-in-out;
+}
+.box .start-btn a{
+  text-decoration: none;
+  color: var(--Orange400);
+  font-family: var(--karla), serif;
+  font-weight: bold;
+}
+.box .start-btn:hover{
+  color: white;
+  background-color: transparent;
+  box-shadow: 1px 1px 5px white;
+}
+.box .start-btn:hover a{
+  color: white;
+}
