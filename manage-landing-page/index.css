@@ -48,6 +48,7 @@ header{
   padding: 10px 20px;
   border-radius: 20px;
   display: inline-block;
+  text-wrap: nowrap;
 }
 .start-btn:hover{
   opacity: 0.8;
