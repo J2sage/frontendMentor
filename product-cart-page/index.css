@@ -211,7 +211,7 @@ main{
   left: 0;
   transform: translate(50%, 50%);
   width: 50%;
-  min-width: 320px;
+  min-width: 420px;
   display: none;
 }
 .overlay{
