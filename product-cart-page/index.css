@@ -319,6 +319,14 @@ main{
   .cart-list-container{
     width: 100%;
   }
+  .overlay-container{
+    width: 70%;
+    min-width: 320px;
+    left: 0;
+    right: 0;
+    transform: translate(0, 50%);
+    margin: auto;
+  }
 }
 @media (max-width: 481px) {
   .choice-grid{
