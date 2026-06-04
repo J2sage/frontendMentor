@@ -211,7 +211,7 @@ main{
   left: 0;
   transform: translate(50%, 50%);
   width: 50%;
-  min-width: 300px;
+  min-width: 320px;
   display: none;
 }
 .overlay{
@@ -320,7 +320,7 @@ main{
     width: 100%;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 481px) {
   .choice-grid{
     display: grid;
     grid-template-columns: 1fr;
@@ -336,6 +336,7 @@ main{
   }
   .overlay-container{
     width: 100%;
+    min-width: 320px;
     left: 0;
     right: 0;
     transform: translate(0, 50%);
