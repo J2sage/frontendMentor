@@ -223,6 +223,7 @@ main{
   /* gap: 10px; */
   border-radius: 10px;
   padding: 30px;
+  margin: auto;
 }
 .overlay-icon{
   width: 30px;
